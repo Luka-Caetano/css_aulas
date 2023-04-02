@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 6;
-    font-family: 'Courier New', Geneva, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
 
@@ -44,11 +44,12 @@ body {
 }
 
 .banner {
-    height: fit-content;
-    padding: 40px 0;
-    color: white;
+    display: flex;
+    color: #db7093;
     background-image: url('../assets/bg-jelly-fish-para_outras_pags.png');
     background-size: cover;
+    align-items: center;
+    height: 700px;
 }
 
 .banner .container {
@@ -63,9 +64,57 @@ body {
     margin: 0;
     padding: 0;
     width: 280px;
+    
     height: fit-content;
 }
 
-.banner .container span {
-    font-weight: 800;
+.banner .container {
+    display: grid;
+    width: 450px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    justify-content: center;
+
 }
+
+.banner .container .email {
+    font-size: 24px;
+}
+
+.banner .container .senha {
+    font-size: 24px;
+}
+
+.banner .container input {
+    border-color: #32b9cd;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.rodape {
+    display: flex;
+    background-color: #32b9cd;
+    min-height: 100vh;
+    flex-direction: column;
+    
+
+}
+
+.rodape .textR p {
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.banner .container button {
+    border-radius: 10px;
+    color: white;
+    background-color: #e6005a;
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+}
+
+
+
